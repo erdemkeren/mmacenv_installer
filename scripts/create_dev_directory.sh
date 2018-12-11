@@ -7,8 +7,8 @@ function create_dev_directory() {
 
   installationStarted $toolName
 
-  mkdir ~/dev
-  cp -r contents/devfsh ~/dev
+  [ -d ~/dev ] && mv ~/dev ~/devorg
+  cp -R contents/devfsh ~/dev
 
   installationSucceed $toolName
 }
