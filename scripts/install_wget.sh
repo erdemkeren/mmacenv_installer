@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 source scripts/helpers.sh
 
-## Define the name of the tool being installed
-toolName="wget"
+function install_wget() {
+  ## Define the name of the tool being installed
+  toolName="wget"
 
-installationStarted $toolName
+  installationStarted $toolName
 
-brew install wget
+  brew install wget
 
-installationSucceed $toolName
+  installationSucceed $toolName
+}

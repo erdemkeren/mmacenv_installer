@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 source scripts/helpers.sh
 
-## Define the name of the tool being installed
-toolName="yarn"
+function install_yarn() {
+  ## Define the name of the tool being installed
+  toolName="yarn"
 
-installationStarted $toolName
+  installationStarted $toolName
 
-brew install yarn
+  brew install yarn
 
-installationSucceed $toolName
+  installationSucceed $toolName
+}

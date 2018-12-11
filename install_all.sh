@@ -2,8 +2,6 @@
 
 set -xv
 
-mkdir _tmp_
-
 source scripts/install_brew.sh
 source scripts/install_wget.sh
 source scripts/install_iterm2.sh
@@ -19,6 +17,20 @@ source scripts/install_snazzy.sh
 source scripts/install_pure_prompt.sh
 source scripts/install_slack.sh
 
-rmdir _tmp_
+function install_all() {
+  install_brew
+  install_wget
+  install_iterm2
+  install_oh_my_zsh
+  install_atom
+  install_phpstorm_2016_1_2
+  install_virtual_box
+  install_vagrant
+  install_npm
+  install_yarn
+  install_snazzy
+  install_pure_prompt
+  install_slack
+}
 
 set +xv

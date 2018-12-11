@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 source scripts/helpers.sh
 
-## Define the name of the tool being installed
-toolName="npm"
+function install_npm() {
+  ## Define the name of the tool being installed
+  toolName="npm"
 
-installationStarted $toolName
+  installationStarted $toolName
 
-brew install npm
+  brew install npm
 
-installationSucceed $toolName
+  installationSucceed $toolName
+}

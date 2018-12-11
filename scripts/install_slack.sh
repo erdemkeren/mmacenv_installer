@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 source scripts/helpers.sh
 
-## Define the name of the tool being installed
-toolName="slack"
+function install_slack() {
+  ## Define the name of the tool being installed
+  toolName="slack"
 
-installationStarted $toolName
+  installationStarted $toolName
 
-wget https://slack.com/ssb/download-osx -O_tmp_/slack-mac.dmg
-install_dmg _tmp_/slack-mac.dmg
+  wget https://slack.com/ssb/download-osx -O_tmp_/slack-mac.dmg
+  install_dmg _tmp_/slack-mac.dmg
 
-installationSucceed $toolName
+  installationSucceed $toolName
+}
