@@ -13,6 +13,7 @@ function applicationConfigured() {
 function install_dmg() {
   VOLUME=`hdiutil attach $1 | grep Volumes | awk '{print $3}'`
   if [ -e "$VOLUME"/*.app ]; then
+    echo "hi"
     sudo cp -rf $VOLUME/*.app /Applications
   elif [ -e "$VOLUME"/*.pkg ]; then
     PACKAGE=$(ls $VOLUME | grep .pkg | head -1)

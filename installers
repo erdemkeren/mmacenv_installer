@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -xv
-
 source scripts/install_brew.sh
 source scripts/install_wget.sh
 source scripts/install_iterm2.sh
@@ -17,7 +15,7 @@ source scripts/install_snazzy.sh
 source scripts/install_pure_prompt.sh
 source scripts/install_slack.sh
 
-function install_all() {
+function install_mmacenv() {
   install_brew
   install_wget
   install_iterm2
@@ -31,6 +29,22 @@ function install_all() {
   install_snazzy
   install_pure_prompt
   install_slack
+  create_dev_directory
 }
 
-set +xv
+echo ">> You can run one of:"
+echo " - create_dev_directory"
+echo " - install_brew"
+echo " - install_wget"
+echo " - install_iterm2"
+echo " - install_oh_my_zsh"
+echo " - install_atom"
+echo " - install_phpstorm_2016_1_2"
+echo " - install_virtual_box"
+echo " - install_vagrant"
+echo " - install_npm"
+echo " - install_yarn"
+echo " - install_snazzy"
+echo " - install_pure_prompt"
+echo " - install_slack"
+echo " - install_mmacenv (will install all)"
