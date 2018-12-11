@@ -13,6 +13,11 @@ source scripts/install_phpstorm_2016_1_2.sh
 source scripts/create_dev_directory.sh
 source scripts/install_virtual_box.sh
 source scripts/install_vagrant.sh
+source scripts/install_npm.sh
+source scripts/install_yarn.sh
+source scripts/install_snazzy.sh
+source scripts/install_pure_prompt.sh
+source scripts/install_slack.sh
 
 rmdir _tmp_
 
