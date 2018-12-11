@@ -6,7 +6,7 @@ toolName="snazzy"
 
 installationStarted $toolName
 
-open contents/iterm2-snazzy/Snazzy.itermcolors
-open contents/iterm2-snazzy/Snazzy.terminal
+open contents/snazzy/Snazzy.itermcolors
+open contents/snazzy/Snazzy.terminal
 
 installationSucceed $toolName
