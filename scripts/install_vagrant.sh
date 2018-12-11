@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+source scripts/helpers.sh
+
+## Define the name of the tool being installed
+toolName="vagrant"
+
+installationStarted $toolName
+
+wget -O_tmp_/vagrant_index_tmp.html https://releases.hashicorp.com/vagrant/
+VERSION=$(cat _tmp_/vagrant_index_tmp.html | grep -m 1 -o  -E "[0-9]\.[0-9]\.[0-9]" | head -1)
+rm _tmp_/vagrant_index_tmp.html
+
+wget -e robots=off -r -nd -A dmg https://releases.hashicorp.com/vagrant/$VERSION/
+install_dmg _tmp_/$(ls _tmp_ | grep vagrant_$VERSION)
+
+installationSucceed $toolName
