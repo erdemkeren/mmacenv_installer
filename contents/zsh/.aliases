@@ -16,12 +16,13 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias nah="git reset --hard && git clean -df"
 
 ## Vagrant
-alias sun="cd ~/dev/Homestead"
-alias vm="sun && vagrant ssh"
-alias svm="sun && vagrant up"
-alias hvm="sun && vagrant halt"
-alias dvm="sun && vagrant destroy"
-alias provm="sun && vagrant provision"
+alias sun="cd ~/dev/sun"
+alias cds="cd ~/dev/Homestead"
+alias vm="vagrant ssh"
+alias svm="vagrant up"
+alias hvm="vagrant halt"
+alias dvm="vagrant destroy"
+alias provm="vagrant provision"
 
 ## Homestead
 alias edit-homestead="atom ~/dev/Homestead/Homestead.yaml"
