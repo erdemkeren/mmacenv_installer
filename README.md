@@ -40,5 +40,9 @@ Like
  - install_mmacenv (will install all)
 ```
 
-To see the directory hierarchy of my dev_directory, check:
+# Dev Directory
+
+To see the directory hierarchy of my dev_directory (created by create_dev_directory), check:
 [https://github.com/erdemkeren/mmacenv_installer/tree/master/contents/devfsh](https://github.com/erdemkeren/mmacenv_installer/tree/master/contents/devfsh)
+
+It will be cloned inside ~/dev
