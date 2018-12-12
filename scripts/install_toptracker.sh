@@ -3,7 +3,7 @@ source scripts/helpers.sh
 
 function install_toptracker() {
   ## Define the name of the tool being installed
-  toolName="rescuetime"
+  toolName="toptracker"
 
   installationStarted $toolName
 
