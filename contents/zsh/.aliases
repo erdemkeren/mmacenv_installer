@@ -33,6 +33,7 @@ alias cdc="cd ~/dev/code"
 alias cdco="cd ~/dev/code/opencode"
 alias cdcw="cd ~/dev/code/workcode"
 alias cdcp="cd ~/dev/code/percode"
+alias cdce="cd ~/dev/code/educode"
 alias cdcpro="cd ~/dev/code/procode"
 
 ## aliases
