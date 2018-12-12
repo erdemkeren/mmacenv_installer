@@ -14,6 +14,8 @@ source scripts/install_yarn.sh
 source scripts/install_snazzy.sh
 source scripts/install_pure_prompt.sh
 source scripts/install_slack.sh
+source scripts/install_rescuetime.sh
+source scripts/install_toptracker.sh
 
 function install_mmacenv() {
   install_brew
@@ -30,6 +32,8 @@ function install_mmacenv() {
   install_pure_prompt
   install_slack
   create_dev_directory
+  install_rescuetime
+  install_toptracker
 }
 
 echo ">> You can run one of:"
@@ -47,4 +51,6 @@ echo " - install_yarn"
 echo " - install_snazzy"
 echo " - install_pure_prompt"
 echo " - install_slack"
+echo " - install_rescuetime"
+echo " - install_toptracker"
 echo " - install_mmacenv (will install all)"
