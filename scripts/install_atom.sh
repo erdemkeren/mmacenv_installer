@@ -7,10 +7,11 @@ function install_atom() {
 
     installationStarted $toolName
 
-    mkdir _tmp_
-    wget https://atom.io/download/mac -O_tmp_/atom-mac.zip
-    unzip -q -d_tmp_ _tmp_/atom-mac.zip
-    mv _tmp_/Atom.app /Applications/Atom.app
+    brew cask install atom
+#    mkdir _tmp_
+#    wget https://atom.io/download/mac -O_tmp_/atom-mac.zip
+#    unzip -q -d_tmp_ _tmp_/atom-mac.zip
+#    mv _tmp_/Atom.app /Applications/Atom.app
 
     installationSucceed $toolName
 }

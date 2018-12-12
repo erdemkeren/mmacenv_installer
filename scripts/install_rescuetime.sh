@@ -7,8 +7,9 @@ function install_rescuetime() {
 
   installationStarted $toolName
 
-  wget -P_tmp_ https://www.rescuetime.com/installers/RescueTimeInstaller.pkg
-  install_pkg _tmp_/RescueTimeInstaller.pkg
+  brew cask install rescuetime
+#  wget -P_tmp_ https://www.rescuetime.com/installers/RescueTimeInstaller.pkg
+#  install_pkg _tmp_/RescueTimeInstaller.pkg
 
   installationSucceed $toolName
 }

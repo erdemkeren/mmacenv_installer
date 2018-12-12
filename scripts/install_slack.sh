@@ -7,8 +7,9 @@ function install_slack() {
 
   installationStarted $toolName
 
-  wget https://slack.com/ssb/download-osx -O_tmp_/slack-mac.dmg
-  install_dmg _tmp_/slack-mac.dmg
+  brew cask install slack
+#  wget https://slack.com/ssb/download-osx -O_tmp_/slack-mac.dmg
+#  install_dmg _tmp_/slack-mac.dmg
 
   installationSucceed $toolName
 }

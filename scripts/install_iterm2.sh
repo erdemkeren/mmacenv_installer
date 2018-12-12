@@ -7,9 +7,10 @@ function install_iterm2() {
 
   installationStarted $toolName
 
-  wget https://iterm2.com/downloads/stable/latest -O_tmp_/iTerm_Latest.zip
-  unzip -q -d_tmp_ _tmp_/iTerm_Latest.zip
-  mv _tmp_/iTerm.app /Applications/iTerm2.app
+  brew cask install iterm2
+#  wget https://iterm2.com/downloads/stable/latest -O_tmp_/iTerm_Latest.zip
+#  unzip -q -d_tmp_ _tmp_/iTerm_Latest.zip
+#  mv _tmp_/iTerm.app /Applications/iTerm2.app
   cp contents/iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/
 
   installationSucceed $toolName
