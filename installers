@@ -16,6 +16,7 @@ source scripts/install_pure_prompt.sh
 source scripts/install_slack.sh
 source scripts/install_rescuetime.sh
 source scripts/install_toptracker.sh
+source scripts/install_alfred.sh
 
 function install_mmacenv() {
   install_brew
@@ -34,6 +35,7 @@ function install_mmacenv() {
   create_dev_directory
   install_rescuetime
   install_toptracker
+  install_alfred
 }
 
 echo ">> You can run one of:"
@@ -53,4 +55,5 @@ echo " - install_pure_prompt"
 echo " - install_slack"
 echo " - install_rescuetime"
 echo " - install_toptracker"
+echo " - install_alfred"
 echo " - install_mmacenv (will install all)"
