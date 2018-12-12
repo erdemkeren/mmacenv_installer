@@ -30,6 +30,8 @@ Like
  - install_phpstorm_2016_1_2
  - install_virtual_box
  - install_vagrant
+ - install_homestead
+ - install_redis
  - install_npm
  - install_yarn
  - install_snazzy
@@ -37,6 +39,7 @@ Like
  - install_slack
  - install_rescuetime
  - install_toptracker
+ - install_alfred
  - install_mmacenv (will install all)
 ```
 
