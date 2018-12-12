@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 
-alias art="artisan"
-alias tinker="artisan tinker"
-alias serve="artisan serve"
+## Laravel
+alias art="php artisan"
 
 ## Git
 alias gs="git status"
 alias gd="git diff"
 alias gp="git push"
+alias ga="git add"
 alias gaa="git add ."
+alias gup="git pull"
 alias gc="git commit"
 alias gec="git checkout"
 alias göm="git merge"

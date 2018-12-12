@@ -19,6 +19,10 @@ source scripts/install_slack.sh
 source scripts/install_rescuetime.sh
 source scripts/install_toptracker.sh
 source scripts/install_alfred.sh
+source scripts/install_dropbox.sh
+source scripts/install_1password.sh
+source scripts/install_google_chrome.sh
+source scripts/install_drawio.sh
 
 function install_mmacenv() {
   install_brew
@@ -40,9 +44,14 @@ function install_mmacenv() {
   install_rescuetime
   install_toptracker
   install_alfred
+  install_dropbox
+  install_1password
+  install_google_chrome
+  install_drawio
 }
 
 echo ">> You can run one of:"
+
 echo " - create_dev_directory"
 echo " - install_brew"
 echo " - install_wget"
@@ -62,4 +71,9 @@ echo " - install_slack"
 echo " - install_rescuetime"
 echo " - install_toptracker"
 echo " - install_alfred"
+echo " - install_dropbox"
+echo " - install_1password"
+echo " - install_google_chrome"
+echo " - install_drawio"
+
 echo " - install_mmacenv (will install all)"
