@@ -6,6 +6,7 @@ source scripts/install_iterm2.sh
 source scripts/install_oh_my_zsh.sh
 source scripts/install_atom.sh
 source scripts/install_phpstorm_2016_1_2.sh
+source scripts/install_sequel_pro.sh
 source scripts/create_dev_directory.sh
 source scripts/install_virtual_box.sh
 source scripts/install_vagrant.sh
@@ -31,6 +32,7 @@ function install_mmacenv() {
   install_oh_my_zsh
   install_atom
   install_phpstorm_2016_1_2
+  install_sequel_pro
   install_virtual_box
   install_vagrant
   install_homestead
@@ -59,6 +61,7 @@ echo " - install_iterm2"
 echo " - install_oh_my_zsh"
 echo " - install_atom"
 echo " - install_phpstorm_2016_1_2"
+echo " - install_sequel_pro"
 echo " - install_virtual_box"
 echo " - install_vagrant"
 echo " - install_homestead"
