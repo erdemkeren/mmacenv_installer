@@ -39,3 +39,6 @@ Like
  - install_toptracker
  - install_mmacenv (will install all)
 ```
+
+To see the directory hierarchy of my dev_directory, check:
+[https://github.com/erdemkeren/mmacenv_installer/tree/master/contents/devfsh](https://github.com/erdemkeren/mmacenv_installer/tree/master/contents/devfsh)
