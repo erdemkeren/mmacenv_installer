@@ -26,6 +26,7 @@ source scripts/install_google_chrome.sh
 source scripts/install_drawio.sh
 
 function install_mmacenv() {
+  create_dev_directory
   install_brew
   install_wget
   install_iterm2
@@ -42,7 +43,6 @@ function install_mmacenv() {
   install_snazzy
   install_pure_prompt
   install_slack
-  create_dev_directory
   install_rescuetime
   install_toptracker
   install_alfred
