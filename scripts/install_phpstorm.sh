@@ -1,21 +1,24 @@
 #!/usr/bin/env bash
 source scripts/helpers.sh
 
-function install_phpstorm_2016_1_2() {
+function install_phpstorm() {
   ## Define the name of the tool being installed
-  toolName="PhpStorm-2016.1.2"
+  toolName="PhpStorm"
 
   installationStarted $toolName
 
-  wget http://download.jetbrains.com/webide/PhpStorm-2016.1.2.dmg -O_tmp_/PhpStorm-2016.1.2.dmg
-  install_dmg_rename _tmp_/PhpStorm-2016.1.2.dmg PhpStorm "PhpStorm-2016.1.2"
+  brew cask install phpstorm
 
   mkdir ~/Library/Preferences/PhpStorm2016.1/codestyles
   cp contents/phpstorm/Laravel.xml ~/Library/Preferences/PhpStorm2016.1/codestyles
 
   mkdir ~/Library/Preferences/PhpStorm2016.1/colors
   cp contents/phpstorm/pure.icls ~/Library/Preferences/PhpStorm2016.1/colors
-  
+
+  cp contents/phpstorm/Sublimeish.xml ~/Library/Preferences/PhpStorm2016.1/keymaps
+
+  echo ">>> import contents/phpstorm/settings.jar from File | Import Settings manually."
+
   applicationConfigured $toolName
 
   installationSucceed $toolName
