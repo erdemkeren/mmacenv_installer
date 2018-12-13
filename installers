@@ -5,7 +5,6 @@ source scripts/install_wget.sh
 source scripts/install_iterm2.sh
 source scripts/install_oh_my_zsh.sh
 source scripts/install_atom.sh
-# source scripts/install_phpstorm_2016_1_2.sh
 source scripts/install_phpstorm.sh
 source scripts/install_sequel_pro.sh
 source scripts/create_dev_directory.sh
@@ -19,6 +18,7 @@ source scripts/install_yarn.sh
 source scripts/install_snazzy.sh
 source scripts/install_pure_prompt.sh
 source scripts/install_slack.sh
+source scripts/install_rocket_chat.sh
 source scripts/install_rescuetime.sh
 source scripts/install_toptracker.sh
 source scripts/install_alfred.sh
@@ -46,6 +46,7 @@ function install_mmacenv() {
   install_snazzy
   install_pure_prompt
   install_slack
+  install_rocket_chat
   install_rescuetime
   install_toptracker
   install_alfred
@@ -63,7 +64,6 @@ echo " - install_wget"
 echo " - install_iterm2"
 echo " - install_oh_my_zsh"
 echo " - install_atom"
-# echo " - install_phpstorm_2016_1_2"
 echo " - install_phpstorm"
 echo " - install_sequel_pro"
 echo " - install_virtual_box"
@@ -76,6 +76,7 @@ echo " - install_yarn"
 echo " - install_snazzy"
 echo " - install_pure_prompt"
 echo " - install_slack"
+echo " - install_rocket_chat"
 echo " - install_rescuetime"
 echo " - install_toptracker"
 echo " - install_alfred"
