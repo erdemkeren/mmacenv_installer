@@ -13,6 +13,7 @@ source scripts/install_virtual_box.sh
 source scripts/install_vagrant.sh
 source scripts/install_homestead.sh
 source scripts/install_redis.sh
+source scripts/install_postman.sh
 source scripts/install_npm.sh
 source scripts/install_yarn.sh
 source scripts/install_snazzy.sh
@@ -33,13 +34,13 @@ function install_mmacenv() {
   install_iterm2
   install_oh_my_zsh
   install_atom
-  # install_phpstorm_2016_1_2
   install_phpstorm
   install_sequel_pro
   install_virtual_box
   install_vagrant
   install_homestead
   install_redis
+  install_postman
   install_npm
   install_yarn
   install_snazzy
@@ -69,6 +70,7 @@ echo " - install_virtual_box"
 echo " - install_vagrant"
 echo " - install_homestead"
 echo " - install_redis"
+echo " - install_postman"
 echo " - install_npm"
 echo " - install_yarn"
 echo " - install_snazzy"
