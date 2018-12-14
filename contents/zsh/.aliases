@@ -71,3 +71,8 @@ toggleenv() {
     exit 1
   fi
 }
+
+## Php testers
+alias punit="./vendor/bin/phpunit"
+alias spec="./vendor/bin/phpspec"
+alias cept="./vendor/bin/codecept"
