@@ -68,8 +68,10 @@ toggleenv() {
     echo "Successfully toggled environment from test to dev"
   else
     echo ">>> The current environment could not be recognized."
-    exit 1
+    return 1
   fi
+
+  return 0
 }
 
 ## Php testers
