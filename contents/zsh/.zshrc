@@ -112,4 +112,7 @@ prompt pure
 # Laravel
 ARTISAN_OPEN_ON_MAKE_EDITOR=pstorm
 
+# Composer binaries
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
 source ~/.aliases
