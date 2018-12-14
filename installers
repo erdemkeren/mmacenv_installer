@@ -11,6 +11,7 @@ source scripts/create_dev_directory.sh
 source scripts/install_virtual_box.sh
 source scripts/install_vagrant.sh
 source scripts/install_homestead.sh
+source scripts/install_laravel_installer.sh
 source scripts/install_redis.sh
 source scripts/install_postman.sh
 source scripts/install_npm.sh
@@ -39,6 +40,7 @@ function install_mmacenv() {
   install_virtual_box
   install_vagrant
   install_homestead
+  install_laravel_installer
   install_redis
   install_postman
   install_npm
@@ -69,6 +71,7 @@ echo " - install_sequel_pro"
 echo " - install_virtual_box"
 echo " - install_vagrant"
 echo " - install_homestead"
+echo " - install_laravel_installer"
 echo " - install_redis"
 echo " - install_postman"
 echo " - install_npm"
