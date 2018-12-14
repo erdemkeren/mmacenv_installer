@@ -61,9 +61,11 @@ toggleenv() {
   if [ -f ./.env.testing ]
   then # means were in dev
     testenv
+    echo "Successfully toggled environment from dev to test"
   elif [ -f ./.env.dev ]
   then # means were in testing
     devenv
+    echo "Successfully toggled environment from test to dev"
   else
     echo ">>> The current environment could not be recognized."
     exit 1
