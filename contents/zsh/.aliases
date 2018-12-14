@@ -40,3 +40,32 @@ alias cdcpro="cd ~/dev/code/procode"
 ## aliases
 alias edit-aliases="atom ~/.aliases"
 alias realias="source ~/.aliases"
+
+## .env switchers
+
+devenv() {
+  if [ -f ./.env.dev ]; then
+    mv .env .env.testing
+    mv .env.dev .env
+  fi
+}
+
+testenv() {
+    if [ -f ./.env.testing ]; then
+      mv .env .env.dev
+      mv .env.testing .env
+    fi
+}
+
+switchenv() {
+  if [ -f ./.env.testing ]
+  then # means were in dev
+    testenv
+  elif [ -f ./.env.dev ]
+  then # means were in testing
+    devenv
+  else
+    echo ">>> The current environment could not be recognized."
+    exit 1
+  fi
+}
