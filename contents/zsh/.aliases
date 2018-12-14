@@ -57,7 +57,7 @@ testenv() {
     fi
 }
 
-switchenv() {
+toggleenv() {
   if [ -f ./.env.testing ]
   then # means were in dev
     testenv
