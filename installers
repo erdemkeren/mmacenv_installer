@@ -5,6 +5,8 @@ source scripts/install_wget.sh
 source scripts/install_iterm2.sh
 source scripts/install_oh_my_zsh.sh
 source scripts/install_atom.sh
+source scripts/install_sublime_text.sh
+source scripts/install_visual_studio_code.sh
 source scripts/install_phpstorm.sh
 source scripts/install_sequel_pro.sh
 source scripts/create_dev_directory.sh
@@ -35,6 +37,8 @@ function install_mmacenv() {
   install_iterm2
   install_oh_my_zsh
   install_atom
+  install_sublime_text
+  install_visual_studio_code
   install_phpstorm
   install_sequel_pro
   install_virtual_box
@@ -66,6 +70,8 @@ echo " - install_wget"
 echo " - install_iterm2"
 echo " - install_oh_my_zsh"
 echo " - install_atom"
+echo " - install_sublime_text"
+echo " - install_visual_studio_code"
 echo " - install_phpstorm"
 echo " - install_sequel_pro"
 echo " - install_virtual_box"
