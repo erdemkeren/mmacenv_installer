@@ -2,7 +2,6 @@
 source scripts/helpers.sh
 
 function install_virtual_box() {
-  set -xv
   ## Define the name of the tool being installed
   toolName="virtualbox"
 
@@ -14,5 +13,4 @@ function install_virtual_box() {
 #  install_dmg _tmp_/$(ls _tmp_ | grep VirtualBox)
 
   installationSucceed $toolName
-  set +xv
 }

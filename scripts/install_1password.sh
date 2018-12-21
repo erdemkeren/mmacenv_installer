@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source scripts/helpers.sh
 
-function install_vagrant() {
+function install_1password() {
   ## Define the name of the tool being installed
   toolName="1password"
 

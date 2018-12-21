@@ -7,9 +7,9 @@ function install_toptracker() {
 
   installationStarted $toolName
 
-  # brew cask install toptracker
-  wget -O_tmp_/TopTracker_Latest.dmg https://tracker-api.toptal.com/desktop/latest/mac
-  install_dmg _tmp_/TopTracker_latest.dmg
+  brew cask install toptracker
+  # wget -O_tmp_/TopTracker_Latest.dmg https://tracker-api.toptal.com/desktop/latest/mac
+  # install_dmg _tmp_/TopTracker_latest.dmg
 
   installationSucceed $toolName
 }

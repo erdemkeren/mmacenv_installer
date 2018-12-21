@@ -10,7 +10,7 @@ echo '#################################################'
 sudo apt-get update
 
 # Install Java.
-if dpkg -s 'openjdk-11-jre-headless'; then
+if dpkg -s 'openjdk-8-jre-headless'; then
 	echo '#################################################'
 	echo '# OpenJDK is already installed. Moving on.      #'
 	echo '#################################################'
@@ -19,7 +19,7 @@ else
 	echo '# OpenJDK could not be found. Installing..      #'
 	echo '#################################################'
 
-	sudo apt-get install openjdk-11-jre-headless -y
+	sudo apt-get install openjdk-8-jre-headless -y
 fi
 
 if service --status-all | grep -Fq 'elasticsearch'; then
