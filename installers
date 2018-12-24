@@ -27,6 +27,7 @@ source scripts/install_toptracker.sh
 source scripts/install_alfred.sh
 source scripts/install_dropbox.sh
 source scripts/install_1password.sh
+source scripts/install_bitwarden.sh
 source scripts/install_google_chrome.sh
 source scripts/install_drawio.sh
 
@@ -57,7 +58,8 @@ function install_mmacenv() {
   install_toptracker
   install_alfred
   install_dropbox
-  install_1password
+  # install_1password
+  install_bitwarden
   install_google_chrome
   install_drawio
 }
@@ -91,6 +93,7 @@ echo " - install_toptracker"
 echo " - install_alfred"
 echo " - install_dropbox"
 echo " - install_1password"
+echo " - install_bitwarden"
 echo " - install_google_chrome"
 echo " - install_drawio"
 

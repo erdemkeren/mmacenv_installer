@@ -21,33 +21,37 @@ Like
 
 ```
 >> You can run one of:
-- create_dev_directory
-- install_brew
-- install_wget
-- install_iterm2
-- install_oh_my_zsh
-- install_atom
-- install_phpstorm
-- install_sequel_pro
-- install_virtual_box
-- install_vagrant
-- install_homestead
-- install_redis
-- install_postman
-- install_npm
-- install_yarn
-- install_snazzy
-- install_pure_prompt
-- install_slack
-- install_rocket_chat
-- install_rescuetime
-- install_toptracker
-- install_alfred
-- install_dropbox
-- install_1password
-- install_google_chrome
-- install_drawio
-- install_mmacenv (will install all)
+ - create_dev_directory
+ - install_brew
+ - install_wget
+ - install_iterm2
+ - install_oh_my_zsh
+ - install_atom
+ - install_sublime_text
+ - install_visual_studio_code
+ - install_phpstorm
+ - install_sequel_pro
+ - install_virtual_box
+ - install_vagrant
+ - install_homestead
+ - install_laravel_installer
+ - install_redis
+ - install_postman
+ - install_npm
+ - install_yarn
+ - install_snazzy
+ - install_pure_prompt
+ - install_slack
+ - install_rocket_chat
+ - install_rescuetime
+ - install_toptracker
+ - install_alfred
+ - install_dropbox
+ - install_1password
+ - install_bitwarden
+ - install_google_chrome
+ - install_drawio
+ - install_mmacenv (will install all)
 ```
 
 # Dev Directory
