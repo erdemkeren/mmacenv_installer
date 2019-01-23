@@ -30,6 +30,7 @@ source scripts/install_1password.sh
 source scripts/install_bitwarden.sh
 source scripts/install_google_chrome.sh
 source scripts/install_drawio.sh
+source scripts/install_imageoptim.sh
 
 function install_mmacenv() {
   create_dev_directory
@@ -62,6 +63,7 @@ function install_mmacenv() {
   install_bitwarden
   install_google_chrome
   install_drawio
+  install_imageoptim
 }
 
 echo ">> You can run one of:"
