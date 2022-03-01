@@ -7,7 +7,7 @@ function install_rocket_chat() {
 
   installationStarted $toolName
 
-  brew cask install rocket-chat
+  brew install --cask rocket-chat
 
   installationSucceed $toolName
 }

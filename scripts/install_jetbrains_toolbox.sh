@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 source scripts/helpers.sh
 
-function install_sublime_text() {
+function install_jetbrains_toolbox() {
   ## Define the name of the tool being installed
-  toolName="sublime-text"
+  toolName="Jetbrains Toolbox"
 
   installationStarted $toolName
 
-  brew install --cask sublime-text
+  brew install --cask jetbrains-toolbox
 
   installationSucceed $toolName
 }

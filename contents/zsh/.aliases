@@ -12,24 +12,13 @@ alias gaa="git add ."
 alias gup="git pull"
 alias gc="git commit"
 alias gec="git checkout"
-alias göm="git merge"
+alias gom="git merge"
 alias gl="git log --graph"
 alias nah="git reset --hard && git clean -df"
 
-## Vagrant
-alias sun="cd ~/dev/sun"
-alias cds="cd ~/dev/Homestead"
-alias vm="vagrant ssh"
-alias svm="vagrant up"
-alias hvm="vagrant halt"
-alias dvm="vagrant destroy"
-alias provm="vagrant provision"
-
-## Homestead
-alias edit-homestead="atom ~/dev/Homestead/Homestead.yaml"
-
 ## devfsh
 alias c="clear"
+alias cde="cd ~/dev/env"
 alias cdc="cd ~/dev/code"
 alias cdco="cd ~/dev/code/opencode"
 alias cdcw="cd ~/dev/code/workcode"

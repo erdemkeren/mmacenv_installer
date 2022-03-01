@@ -7,7 +7,7 @@ function install_postman() {
 
   installationStarted $toolName
 
-  brew cask install postman
+  brew install --cask postman
 
   installationSucceed $toolName
 }

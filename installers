@@ -4,15 +4,11 @@ source scripts/install_brew.sh
 source scripts/install_wget.sh
 source scripts/install_iterm2.sh
 source scripts/install_oh_my_zsh.sh
-source scripts/install_atom.sh
-source scripts/install_sublime_text.sh
 source scripts/install_visual_studio_code.sh
-source scripts/install_phpstorm.sh
-source scripts/install_sequel_pro.sh
+source scripts/install_sublime_text.sh
+source scripts/install_jetbrains_toolbox.sh
+source scripts/install_tableplus.sh
 source scripts/create_dev_directory.sh
-source scripts/install_virtual_box.sh
-source scripts/install_vagrant.sh
-source scripts/install_homestead.sh
 source scripts/install_laravel_installer.sh
 source scripts/install_redis.sh
 source scripts/install_postman.sh
@@ -24,7 +20,7 @@ source scripts/install_slack.sh
 source scripts/install_rocket_chat.sh
 source scripts/install_rescuetime.sh
 source scripts/install_toptracker.sh
-source scripts/install_alfred.sh
+source scripts/install_raycast.sh
 source scripts/install_dropbox.sh
 source scripts/install_1password.sh
 source scripts/install_bitwarden.sh
@@ -41,11 +37,8 @@ function install_mmacenv() {
   install_atom
   install_sublime_text
   install_visual_studio_code
-  install_phpstorm
-  install_sequel_pro
-  install_virtual_box
-  install_vagrant
-  install_homestead
+  install_jetbrains_toolbox
+  install_tableplus
   install_laravel_installer
   install_redis
   install_postman
@@ -57,13 +50,14 @@ function install_mmacenv() {
   install_rocket_chat
   install_rescuetime
   install_toptracker
-  install_alfred
+  install_raycast
   install_dropbox
-  # install_1password
+  install_1password
   install_bitwarden
   install_google_chrome
   install_drawio
   install_imageoptim
+  install_docker
 }
 
 echo ">> You can run one of:"
@@ -73,14 +67,10 @@ echo " - install_brew"
 echo " - install_wget"
 echo " - install_iterm2"
 echo " - install_oh_my_zsh"
-echo " - install_atom"
 echo " - install_sublime_text"
 echo " - install_visual_studio_code"
-echo " - install_phpstorm"
-echo " - install_sequel_pro"
-echo " - install_virtual_box"
-echo " - install_vagrant"
-echo " - install_homestead"
+echo " - install_jetbrains_toolbox"
+echo " - install_tableplus"
 echo " - install_laravel_installer"
 echo " - install_redis"
 echo " - install_postman"
@@ -92,11 +82,12 @@ echo " - install_slack"
 echo " - install_rocket_chat"
 echo " - install_rescuetime"
 echo " - install_toptracker"
-echo " - install_alfred"
+echo " - install_raycast"
 echo " - install_dropbox"
 echo " - install_1password"
 echo " - install_bitwarden"
 echo " - install_google_chrome"
 echo " - install_drawio"
+echo " - install_docker"
 
 echo " - install_mmacenv (will install all)"

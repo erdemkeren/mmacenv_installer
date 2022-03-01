@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 source scripts/helpers.sh
 
-function install_sequel_pro() {
+function install_alfred() {
   ## Define the name of the tool being installed
-  toolName="sequel-pro"
+  toolName="Raycast"
 
   installationStarted $toolName
 
-  brew cask install sequel-pro
+  brew install --cask raycast
+  
+  applicationConfigured $toolName
 
   installationSucceed $toolName
 }

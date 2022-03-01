@@ -7,8 +7,8 @@ function install_1password() {
 
   installationStarted $toolName
 
-  brew cask install 1password
-  brew cask install 1password-cli
+  brew install --cask 1password
+  brew install --cask 1password-cli
 
   installationSucceed $toolName
 }

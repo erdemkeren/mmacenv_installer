@@ -7,7 +7,7 @@ function install_imageoptim() {
 
     installationStarted $toolName
 
-    brew cask install imageoptim
+    brew install --cask imageoptim
 
     installationSucceed $toolName
 }

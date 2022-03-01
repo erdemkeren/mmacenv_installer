@@ -7,7 +7,7 @@ function install_dropbox() {
 
   installationStarted $toolName
 
-  brew cask install dropbox
+  brew install --cask dropbox
 
   installationSucceed $toolName
 }

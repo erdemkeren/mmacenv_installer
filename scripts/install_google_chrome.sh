@@ -7,7 +7,7 @@ function install_google_chrome() {
 
   installationStarted $toolName
 
-  brew cask install google-chrome
+  brew install --cask google-chrome
 
   installationSucceed $toolName
 }

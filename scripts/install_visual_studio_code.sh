@@ -7,7 +7,7 @@ function install_visual_studio_code() {
 
   installationStarted $toolName
 
-  brew cask install visual-studio-code
+  brew install --cask visual-studio-code
 
   installationSucceed $toolName
 }

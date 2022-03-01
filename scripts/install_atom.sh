@@ -7,7 +7,7 @@ function install_atom() {
 
     installationStarted $toolName
 
-    brew cask install atom
+    brew install --cask atom
 #    mkdir _tmp_
 #    wget https://atom.io/download/mac -O_tmp_/atom-mac.zip
 #    unzip -q -d_tmp_ _tmp_/atom-mac.zip

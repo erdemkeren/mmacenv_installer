@@ -7,7 +7,7 @@ function install_bitwarden() {
 
   installationStarted $toolName
 
-  brew cask install bitwarden
+  brew install --cask bitwarden
   brew install bitwarden-cli
 
   installationSucceed $toolName

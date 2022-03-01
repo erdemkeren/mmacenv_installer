@@ -7,7 +7,7 @@ function install_drawio() {
 
   installationStarted $toolName
 
-  brew cask install drawio
+  brew install --cask drawio
 
   installationSucceed $toolName
 }
