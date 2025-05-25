@@ -2,6 +2,7 @@
 
 ## Laravel
 alias art="php artisan"
+alias sail="bash vendor/bin/sail"
 
 ## Git
 alias gs="git status"
@@ -15,9 +16,14 @@ alias gec="git checkout"
 alias gom="git merge"
 alias gl="git log --graph"
 alias nah="git reset --hard && git clean -df"
+alias gwip="git add . && git commit -m \"wip\""
+alias gap="git add . && git commit -m \"to be squashed\" && git squash-last"
+alias gsq="git squash-last"
+alias gsqn="git squash-n"
 
 ## devfsh
 alias c="clear"
+alias cdd="cd ~/dev"
 alias cde="cd ~/dev/env"
 alias cdc="cd ~/dev/code"
 alias cdco="cd ~/dev/code/opencode"
@@ -27,43 +33,12 @@ alias cdce="cd ~/dev/code/educode"
 alias cdcpro="cd ~/dev/code/procode"
 
 ## aliases
-alias edit-aliases="atom ~/.aliases"
+alias edit-aliases="code ~/.aliases"
 alias realias="source ~/.aliases"
 
-## .env switchers
+## USCWeb
+alias repl="uscenv exec ./bin/cli de-dev repl start"
+alias composer="uscenv exec composer"
 
-devenv() {
-  if [ -f ./.env.dev ]; then
-    mv .env .env.testing
-    mv .env.dev .env
-  fi
-}
-
-testenv() {
-    if [ -f ./.env.testing ]; then
-      mv .env .env.dev
-      mv .env.testing .env
-    fi
-}
-
-toggleenv() {
-  if [ -f ./.env.testing ]
-  then # means were in dev
-    testenv
-    echo "Successfully toggled environment from dev to test"
-  elif [ -f ./.env.dev ]
-  then # means were in testing
-    devenv
-    echo "Successfully toggled environment from test to dev"
-  else
-    echo ">>> The current environment could not be recognized."
-    return 1
-  fi
-
-  return 0
-}
-
-## Php testers
-alias punit="./vendor/bin/phpunit"
-alias spec="./vendor/bin/phpspec"
-alias cept="./vendor/bin/codecept"
+## Fuck
+alias "god"=fuck
